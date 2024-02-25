@@ -4,7 +4,8 @@
         margin-bottom: 6rem;
     }
 
-    .about-containers {
+    .about-containers,
+    .about-containers-project {
         flex-wrap: wrap;
     }
 
@@ -52,7 +53,8 @@
         margin: 0 auto 2rem;
     }
 
-    .about-containers {
+    .about-containers,
+    .about-containers-project {
         margin-top: 0;
     }
 }
@@ -79,6 +81,7 @@
     }
 
     .about-containers,
+    .about-containers-project,
     .contact-info-upper-container,
     .btn-container {
         flex-wrap: wrap;
