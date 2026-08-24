@@ -1,0 +1,112 @@
+/* Experience page
+   Clean, text-first layout without cards. */
+
+.experience-page {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 4rem 2rem 6rem;
+}
+
+.experience-page > .section__text__p1 {
+    margin-bottom: 0.35rem;
+}
+
+.experience-list {
+    margin-top: 4rem;
+}
+
+.experience-item {
+    padding: 0 0 3.5rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.experience-item h2 {
+    font-size: 1.65rem;
+    margin: 0 0 0.45rem;
+    color: rgb(45, 45, 45);
+}
+
+.experience-meta {
+    margin: 0 0 1.25rem;
+    font-size: 1rem;
+    color: rgb(85, 85, 85);
+}
+
+.experience-description {
+    max-width: 900px;
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgb(65, 65, 65);
+}
+
+.experience-item ul {
+    margin: 0 0 1.2rem;
+    padding-left: 1.3rem;
+}
+
+.experience-item li {
+    margin-bottom: 0.55rem;
+    line-height: 1.65;
+    color: rgb(55, 55, 55);
+}
+
+.experience-focus {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: rgb(70, 70, 70);
+}
+
+/* Tablet */
+@media screen and (max-width: 1200px) {
+    .experience-page {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .experience-list {
+        margin-top: 3rem;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .experience-page {
+        padding: 2.5rem 7% 4rem;
+    }
+
+    .experience-list {
+        margin-top: 2.5rem;
+    }
+
+    .experience-item {
+        padding-bottom: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .experience-item h2 {
+        font-size: 1.4rem;
+    }
+
+    .experience-meta {
+        font-size: 0.92rem;
+        line-height: 1.6;
+    }
+
+    .experience-description,
+    .experience-item li {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .experience-item ul {
+        padding-left: 1.15rem;
+    }
+}
