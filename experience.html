@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Experience | Amina</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Amina</div>
+        <ul class="nav-links">
+            <li><a href="index.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+        </ul>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Amina</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <a href="index.html" onclick="toggleMenu()">About</a>
+                <a href="experience.html" onclick="toggleMenu()">Experience</a>
+                <a href="research.html" onclick="toggleMenu()">Research</a>
+                <a href="projects.html" onclick="toggleMenu()">Projects</a>
+                <a href="skills.html" onclick="toggleMenu()">Skills</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="inner-page">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">My Experience</h1>
+
+        <div class="page-content">
+            
+<div class="content-card">
+    <h2>Web Development Intern</h2>
+    <p class="date">TiCON System Ltd., Dhaka · Jun 2024 – Aug 2024</p>
+    <ul>
+        <li>Built a backend for a machine learning-based cricket shot analysis platform using Node.js and Express.js.</li>
+        <li>Designed database architecture with PostgreSQL and Firebase for data management.</li>
+        <li>Developed APIs for user management, video uploads, and analytics integration.</li>
+        <li>Collaborated with teams to align backend, frontend, and machine learning workflows.</li>
+    </ul>
+</div>
+
+<div class="content-card">
+    <h2>Data Annotator</h2>
+    <p class="date">BRKB Project · Jan 2024 – Feb 2024</p>
+    <ul>
+        <li>Gathered relevant data from the dataset using Python.</li>
+    </ul>
+</div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
