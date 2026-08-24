@@ -1,0 +1,163 @@
+/* Home/Profile layout update
+   This file intentionally overrides only the homepage profile section,
+   so the rest of the portfolio keeps its existing design. */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    min-height: 72vh;
+    margin: 0 8%;
+    padding: 3rem 0;
+}
+
+.profile-left {
+    width: 400px;
+    flex: 0 0 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-left .section__pic-container {
+    width: 360px;
+    height: 360px;
+}
+
+.profile-intro {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.profile-intro .title {
+    font-size: 2.6rem;
+    margin-bottom: 0.35rem;
+}
+
+.profile-intro .section__text__p2 {
+    font-size: 1.2rem;
+    line-height: 1.55;
+    margin-bottom: 0;
+}
+
+.profile-intro #socials-container {
+    margin-top: 1rem;
+}
+
+.profile-story {
+    flex: 1;
+    max-width: 720px;
+    text-align: left;
+}
+
+.profile-story .section__text__p1 {
+    text-align: left;
+    margin-bottom: 0.35rem;
+}
+
+.profile-story h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.25rem;
+    color: rgb(40, 40, 40);
+}
+
+.profile-story p:not(.section__text__p1) {
+    font-size: 1rem;
+    line-height: 1.85;
+    margin-bottom: 1rem;
+}
+
+/* Tablet */
+@media screen and (max-width: 1200px) {
+    #profile {
+        gap: 3.5rem;
+        margin: 0 5%;
+    }
+
+    .profile-left {
+        width: 320px;
+        flex-basis: 320px;
+    }
+
+    .profile-left .section__pic-container {
+        width: 290px;
+        height: 290px;
+    }
+
+    .profile-story h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    #profile {
+        flex-direction: column;
+        min-height: auto;
+        margin: 2rem 5% 0;
+        padding: 1rem 0 4rem;
+        gap: 2.5rem;
+    }
+
+    .profile-left {
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .profile-left .section__pic-container {
+        width: 275px;
+        height: 275px;
+    }
+
+    .profile-intro {
+        margin-top: 1.25rem;
+    }
+
+    .profile-intro .title {
+        font-size: 2.2rem;
+    }
+
+    .profile-intro .section__text__p2 {
+        font-size: 1.15rem;
+    }
+
+    .profile-story {
+        width: 100%;
+        max-width: 700px;
+        text-align: center;
+    }
+
+    .profile-story .section__text__p1 {
+        text-align: center;
+    }
+
+    .profile-story h2 {
+        font-size: 1.9rem;
+    }
+
+    .profile-story p:not(.section__text__p1) {
+        text-align: left;
+        font-size: 0.98rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .profile-left .section__pic-container {
+        width: 230px;
+        height: 230px;
+    }
+
+    .profile-intro .title {
+        font-size: 2rem;
+    }
+
+    .profile-intro .section__text__p2 {
+        font-size: 1.05rem;
+    }
+
+    .profile-story h2 {
+        font-size: 1.7rem;
+    }
+}
