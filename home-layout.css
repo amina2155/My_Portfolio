@@ -26,7 +26,7 @@
 
 .profile-intro {
     width: 100%;
-    margin-top: 1.25rem;
+    margin-top: 1rem;
 }
 
 .profile-intro .title {
@@ -35,7 +35,7 @@
 }
 
 .profile-intro .section__text__p2 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 0;
 }
@@ -112,15 +112,15 @@
     }
 
     .profile-intro {
-        margin-top: 1.25rem;
+        margin-top: 1rem;
     }
 
     .profile-intro .title {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .profile-intro .section__text__p2 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .profile-story {
@@ -134,12 +134,12 @@
     }
 
     .profile-story h2 {
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
 
     .profile-story p:not(.section__text__p1) {
         text-align: left;
-        font-size: 0.98rem;
+        font-size: 0.90rem;
     }
 }
 
@@ -150,11 +150,11 @@
     }
 
     .profile-intro .title {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .profile-intro .section__text__p2 {
-        font-size: 1.05rem;
+        font-size: 0.95rem;
     }
 
     .profile-story h2 {
