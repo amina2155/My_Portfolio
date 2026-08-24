@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My PortFolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Amina | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
-
 </head>
 
 <body>
-
     <nav id="desktop-nav">
         <div class="logo">Amina</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
-        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+        </ul>
     </nav>
 
     <nav id="hamburger-nav">
@@ -35,375 +29,83 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+                <a href="index.html" onclick="toggleMenu()">About</a>
+                <a href="experience.html" onclick="toggleMenu()">Experience</a>
+                <a href="research.html" onclick="toggleMenu()">Research</a>
+                <a href="projects.html" onclick="toggleMenu()">Projects</a>
+                <a href="skills.html" onclick="toggleMenu()">Skills</a>
             </div>
         </div>
     </nav>
 
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/roundAmina.png" alt="Amina's profile picture" />
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Amina</h1>
-            <p class="section__text__p2">Undergraduate Computer Science & Engineering Student
-            </p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/MyCV.pdf')">
-                    Download CV
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact Info
-                </button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-                    onclick="location.href='https://www.linkedin.com/in/amiiina/'" />
-                <img src="./assets/github.png" alt="My Github profile" class="icon"
-                    onclick="location.href='https://github.com/amina2155'" />
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1><br><br><br>
-        <div class="section-about-container">
-            <div id="pic-plus-short-description">
-                <div class="section__pic-container">
-                    <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
-                </div>
-                <div class="text-container" style="align-items: center;">
-                    <p>
-                    <h1>Hi I am Amina</h1> I am a motivated undergraduate student with a passion for software
-                    development, eager to learn and grow in mobile app and web development. Seeking opportunities to
-                    work on real-life projects with professional companies, I am committed to expanding my skills and
-                    contributing effectively to innovative projects. With a strong foundation and enthusiasm to learn, I
-                    am ready to embark on this journey of growth and development. </p>
-                </div>
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon" /><br><br>
-                        <h2>My Experience</h2><br>
-                        <h4>Web Development Intern</h4>
-                        <p>TiCON System Ltd., Dhaka <br>Jun 2024 - Aug 2024</p>
-                        <ul>
-                            <li>Built a backend for a machine learning-based cricket shot analysis platform using
-                                Node.js and Express.js.</li>
-                            <li>Designed database architecture with PostgreSQL and Firebase for seamless data
-                                management.</li>
-                            <li>Developed secure APIs for user management, video uploads, and analytics integration.
-                            </li>
-                            <li>Collaborated with teams to align backend with front-end and machine learning workflows.
-                            </li>
-                        </ul>
-                        <br>
-                        <h4>Data Annotator</h4>
-                        <p>BRKB Project <br>Jan 2024 - Feb 2024</p>
-                        <ul>
-                            <li>Gathered relevant data from the dataset using Python</li>
-                        </ul>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/research.png" alt="Research icon" class="icon" /><br><br>
-                        <h2>My Research</h2><br>
-                        <h4>Energy-Efficient Blockchain Consensus Mechanism Optimized for IoT Networks</h4>
-                        <p>Undergraduate Thesis<br>May 2024 – Present</p>
-                        <ul>
-                            <li>Developing an innovative blockchain consensus mechanism tailored to overcome scalability
-                                and energy-
-                                efficiency constraints in IoT environments.</li>
-                            <li>Designing the protocol to optimize transaction throughput, minimize energy usage, and
-                                strengthen data
-                                integrity in extensive IoT networks.</li>
-                            <li>Developed secure APIs for user management, video uploads, and analytics integration.
-                            </li>
-                            <li>ncorporating IoT communication protocols like LoRaWAN to assess practical deployment and
-                                enhance long-
-                                range connectivity in IoT systems.
-                            </li>
-                        </ul>
-                        <br>
-                        <h4>Machine Learning model for Cricket shot detection</h4>
-                        <p>Research Project<br>Jun 2024 – Present</p>
-                        <ul>
-                            <li>Developed a framework combining YOLOv9 for object detection and LRCN to classify cricket
-                                shots effectively.</li>
-                            <li>Curated a comprehensive dataset of over 5,000 cricket shot sequences spanning 10+
-                                distinct shot categories
-                                for evaluation.</li>
-                        </ul>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon" class="icon" /><br> <br>
-                        <h3>My Education</h3><br>
-                        <h5><b>BSc in Computer Science and Engineering</b></h5>
-                        CGPA 3.66 out of 4.00 <br>
-                        Islamic University of Technology <br>
-                        <br> <br>
-                        <h5> <b>Higher Secondary Certificate</b></h5>
-                        GPA 5.00 out of 5.00 <br>
-                        Gazipur Government Mohila College <br>
-                        <br><br>
-                        <h5> <b>Secondary School Certificate</b></h5>
-                        GPA 5.00 out of 5.00 <br>
-                        Joydebpur Government Girls' High School <br>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-    </section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Skills</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>C / C++</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>HTML</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>CSS</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>JavaScript</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>React-Native</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Python</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Bash</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Latex</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Firebase</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>MySQL</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Node JS</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Express JS</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Github</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Google Cloud</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Microsoft office</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>NS3</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>IntelliJ</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>PyCharm</h3>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-    </section>
-
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers-project">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project1_multi.jpg" alt="Project 1" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project One</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Github
-                        </button>
-                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Live Demo
-                        </button> -->
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project2_codelabs.png" alt="Project 2" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Two</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Github
-                        </button>
-                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Live Demo
-                        </button> -->
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project3_webdiv.PNG" alt="Project 3" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Three</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Github
-                        </button>
-                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Live Demo
-                        </button> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-    </section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-                <p><a href="mailto:amina@iut-dhaka.edu">amina@iut-dhaka.edu</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-                <p><a href="https://www.linkedin.com/in/amiiina/">www.linkedin.com/in/amiiina</a></p>
-            </div>
-        </div>
-
-        <br><br><br><br><br>
-
-        <div class="container my-3">
-            <h1 class="mb-3" style="text-align: center;">Well wishes for me?</h1><br><br>
-            <!-- <hr> -->
-            <div class="card shadow-lg p-3 mb-5 rounded bg-dark text-white">
-                <!-- <img src="..." class="card-img-top" alt="..."> -->
-                <div class="card-body">
-                    <input class="form-control mb-2" id="addTitle" type="text" placeholder="Title">
-                    <!-- <h5 class="card-title">Add a Note</h5> -->
-                    <div class="form-group">
-                        <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->
-                        <textarea class="form-control" id="addTxt" placeholder="Your Note" rows="3"></textarea>
-                    </div>
-                    <button class="btn btn-primary" id="addBtn" style="background-color: aquamarine; color: black;">Add
-                        Note</button>
-                </div>
+    <main>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/roundAmina.png" alt="Amina's profile picture">
             </div>
 
-            <br><br><br>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Amina</h1>
+                <p class="section__text__p2">Undergraduate Computer Science & Engineering Student</p>
 
-            <h1 class="mt-5"></h1>
-            <!-- <hr> -->
-            <div id="notes" class="row container-fluid"></div>
-
-
-        </div>
-
-
-        <!-- 
-        <footer>
-            <nav>
-                <div class="nav-links-container">
-                    <ul class="nav-links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                <div id="socials-container">
+                    <a href="https://www.linkedin.com/in/amiiina/" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon">
+                    </a>
+                    <a href="https://github.com/amina2155" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/github.png" alt="GitHub" class="icon">
+                    </a>
+                    <a href="YOUR_GOOGLE_SCHOLAR_LINK" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/scholar.png" alt="Google Scholar" class="icon">
+                    </a>
+                    <a href="mailto:YOUR_EMAIL_ADDRESS">
+                        <img src="./assets/email.png" alt="Email" class="icon email-icon">
+                    </a>
                 </div>
-            </nav>
-        </footer> -->
+            </div>
+        </section>
 
-        <script src="script.js"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
+        <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
 
+            <div class="story-container">
+                <p>
+                    Your story will go here. Replace this text with the short story
+                    you want visitors to read about your background, interests,
+                    research journey, and what you are currently working toward.
+                </p>
+            </div>
 
+            <div class="page-links">
+                <a href="experience.html" class="page-link-card">
+                    <span>01</span>
+                    <h2>My Experience</h2>
+                    <p>Explore my professional and practical experience.</p>
+                </a>
+
+                <a href="research.html" class="page-link-card">
+                    <span>02</span>
+                    <h2>My Research</h2>
+                    <p>Explore my research interests, publications, and work.</p>
+                </a>
+
+                <a href="projects.html" class="page-link-card">
+                    <span>03</span>
+                    <h2>My Projects</h2>
+                    <p>Explore selected projects and technical work.</p>
+                </a>
+
+                <a href="skills.html" class="page-link-card">
+                    <span>04</span>
+                    <h2>My Skills</h2>
+                    <p>Explore my technical skills and tools.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
