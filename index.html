@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amina | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home-layout.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
-
 <body>
     <nav id="desktop-nav">
         <div class="logo">Amina</div>
@@ -31,7 +30,6 @@
                 <span></span>
                 <span></span>
             </div>
-
             <div class="menu-links">
                 <a href="index.html" onclick="toggleMenu()">About</a>
                 <a href="experience.html" onclick="toggleMenu()">Experience</a>
@@ -46,48 +44,50 @@
 
     <main>
         <section id="profile">
-            <div class="section__pic-container">
-                <img src="./assets/roundAmina.png" alt="Amina's profile picture">
-            </div>
+            <div class="profile-left">
+                <div class="section__pic-container">
+                    <img src="./assets/roundAmina.png" alt="Amina's profile picture">
+                </div>
 
-            <div class="section__text">
-                <h1 class="title">Amina</h1>
-                <p class="section__text__p2">Computer Science & Engineering Graduate and a Research Enthusiast</p>
+                <div class="profile-intro">
+                    <h1 class="title">Amina</h1>
+                    <p class="section__text__p2">
+                        Computer Science &amp; Engineering Graduate and a Research Enthusiast
+                    </p>
 
-                <div id="socials-container">
-                    <a href="https://www.linkedin.com/in/aminaaaaa/" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon">
-                    </a>
+                    <div id="socials-container">
+                        <a href="https://www.linkedin.com/in/aminaaaaa/" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/linkedin.png" alt="LinkedIn" class="icon">
+                        </a>
 
-                    <a href="https://github.com/amina2155" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/github.png" alt="GitHub" class="icon">
-                    </a>
+                        <a href="https://github.com/amina2155" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/github.png" alt="GitHub" class="icon">
+                        </a>
 
-                    <a href="https://scholar.google.com/citations?user=hkPUuo4AAAAJ&hl=en"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        <img src="https://icons.iconarchive.com/icons/academicons-team/academicons/128/google-scholar-icon.png"
-                             alt="Google Scholar"
-                             class="icon">
-                    </a>
+                        <a href="https://scholar.google.com/citations?user=hkPUuo4AAAAJ&hl=en"
+                           target="_blank" rel="noopener noreferrer">
+                            <img src="https://icons.iconarchive.com/icons/academicons-team/academicons/128/google-scholar-icon.png"
+                                 alt="Google Scholar" class="icon">
+                        </a>
 
-                    <a href="mailto:amina@iut-dhaka.edu">
-                        <img src="./assets/email.png" alt="Email" class="icon email-icon">
-                    </a>
+                        <a href="mailto:amina@iut-dhaka.edu">
+                            <img src="./assets/email.png" alt="Email" class="icon email-icon">
+                        </a>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <section id="about">
-            <p class="section__text__p1">Get To Know More</p>
-            <h1 class="title">About Me</h1>
+            <div class="profile-story">
+                <p class="section__text__p1">Get To Know About Me</p>
+                <h2>My Research Journey</h2>
 
-            <div class="story-container">
                 <p>
-                    Your story will go here. Replace this text with the short story
-                    you want visitors to read about your background, interests,
-                    research journey, and what you are currently working toward.
+                    My journey in research began during my undergraduate years, when I joined a
+                    network research group and started exploring blockchain technology. Curious
+                    about how machine learning could make decentralized systems more intelligent,
+                    I gradually moved toward machine learning and deep learning.
                 </p>
+
             </div>
         </section>
     </main>
@@ -95,4 +95,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-```
