@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | Amina</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="projects-layout.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <ul class="nav-links">
+            <li><a href="index.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="extracurricular.html">Extra-Curricular</a></li>
+        </ul>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-links">
+                <a href="index.html" onclick="toggleMenu()">About</a>
+                <a href="experience.html" onclick="toggleMenu()">Experience</a>
+                <a href="research.html" onclick="toggleMenu()">Research</a>
+                <a href="projects.html" onclick="toggleMenu()">Projects</a>
+                <a href="achievements.html" onclick="toggleMenu()">Achievements</a>
+                <a href="extracurricular.html" onclick="toggleMenu()">Extra-Curricular</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="inner-page projects-page">
+
+        <div class="projects-grid">
+
+            <!-- Multicare Indigo -->
+            <article class="project-card">
+                <span class="project-type">Android Application</span>
+
+                <h2>Multicare Indigo</h2>
+
+                <p class="project-summary">
+                    An Android emergency assistance app focused on rapid SOS
+                    communication and location sharing. The project explores a
+                    simple way to connect people in danger with trusted family
+                    and friends when professional emergency services may not
+                    be able to reach them quickly.
+                </p>
+
+                <div class="project-tech">
+                    <strong>Tech Stack:</strong>
+                    Java, Gradle, Firebase, Google Maps API
+                </div>
+
+                <ul>
+                    <li>Developed the SOS trigger and emergency messaging features using Java in Android Studio.</li>
+                    <li>Integrated Firebase for user and emergency-contact data management.</li>
+                    <li>Implemented real-time location tracking and sharing using the Google Maps API.</li>
+                    <li>Designed the system around a single-action SOS workflow for quick emergency communication.</li>
+                </ul>
+
+                <a
+                    class="project-link"
+                    href="https://github.com/amina2155/Multicare_Indigo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View Code on GitHub ↗
+                </a>
+            </article>
+
+
+            <!-- Webdiv -->
+            <article class="project-card">
+                <span class="project-type">Educational Platform</span>
+
+                <h2>Webdiv</h2>
+
+                <p class="project-summary">
+                    A visual learning platform designed to make web development
+                    more interactive. Students can experiment with web
+                    components on a blank canvas and immediately see the
+                    corresponding HTML and CSS code generated from their
+                    visual arrangements.
+                </p>
+
+                <div class="project-tech">
+                    <strong>Tech Stack:</strong>
+                    HTML, CSS, JavaScript, Firebase, GitHub
+                </div>
+
+                <ul>
+                    <li>Designed a drag-and-drop interface for placing and arranging web components visually.</li>
+                    <li>Implemented automatic HTML/CSS code generation based on the user's visual arrangement.</li>
+                    <li>Hosted the project on GitHub and used Firebase for storing and managing user data.</li>
+                    <li>The project was recognized and awarded at a university project showcasing event.</li>
+                </ul>
+
+                <a
+                    class="project-link"
+                    href="https://github.com/amina2155/CodelabsFinal"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View Code on GitHub ↗
+                </a>
+            </article>
+
+
+            <!-- CodeLabs -->
+            <article class="project-card">
+                <span class="project-type">Collaborative Coding Platform</span>
+
+                <h2>CodeLabs</h2>
+
+                <p class="project-summary">
+                    A collaborative coding platform designed as a virtual
+                    classroom where teachers and students can work together
+                    through shared coding environments. Teachers can observe
+                    students' code live, make corrections, and manage their
+                    classrooms through a shared workspace.
+                </p>
+
+                <div class="project-tech">
+                    <strong>Tech Stack:</strong>
+                    JavaScript, Node.js, Express.js, Firebase, Google Cloud
+                </div>
+
+                <ul>
+                    <li>Developed backend services using Node.js and Express.js.</li>
+                    <li>Built classroom, user, and notification management features with Firebase.</li>
+                    <li>Designed shared coding environments that allowed teachers to monitor and interact with students' work in real time.</li>
+                    <li>Deployed and hosted the platform using Google Cloud.</li>
+                </ul>
+
+                <a
+                    class="project-link"
+                    href="https://github.com/amina2155/CodelabsFinal"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View Code on GitHub ↗
+                </a>
+            </article>
+
+
+            <!-- Qwiki -->
+            <article class="project-card">
+                <span class="project-type">Educational Mobile App</span>
+
+                <h2>Qwiki</h2>
+
+                <p class="project-summary">
+                    An interactive learning app that combines educational
+                    practice with gamification. Children can complete general
+                    knowledge and mathematics quizzes, earn points, and unlock
+                    mini-games as they progress.
+                </p>
+
+                <div class="project-tech">
+                    <strong>Tech Stack:</strong>
+                    TypeScript, React Native, Expo, Firebase
+                </div>
+
+                <ul>
+                    <li>Built the mobile interface and interactive learning experiences using React Native and Expo.</li>
+                    <li>Developed quiz and practice sessions for general knowledge and mathematics.</li>
+                    <li>Implemented a points-based reward system that unlocks mini-games as students progress.</li>
+                    <li>Used Firebase for real-time data storage and tracking user progress.</li>
+                </ul>
+
+                <a
+                    class="project-link"
+                    href="https://github.com/amina2155/Qwiki"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View Code on GitHub ↗
+                </a>
+            </article>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
