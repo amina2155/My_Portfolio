@@ -310,48 +310,99 @@ nav {
     color: white;
 }
 
-/* SKILLS */
+/* Extra-Curricular page
+   Layout:
+   Row 1 : Competitions & Academic Activities | Community & Volunteering | Content & Creative Work
+*/
 
-.skills-grid {
+.extracurricular-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 2% 3rem;
+}
+
+.extracurricular-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.5rem;
+    margin-top: 1.5rem;
+    align-items: stretch;
 }
 
-.skills-grid .content-card {
-    margin-bottom: 0;
+.extracurricular-card {
+    padding: 1.25rem 1.4rem;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 12px;
+    background: transparent;
 }
 
-.skill-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.7rem;
-    margin-top: 1.2rem;
+.extracurricular-card h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    color: rgb(45, 45, 45);
 }
 
-.skill-list span {
-    padding: 0.55rem 0.9rem;
-    border: 1px solid rgb(190, 190, 190);
-    border-radius: 1.5rem;
-    background: white;
+.extracurricular-card p {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.55;
     color: rgb(70, 70, 70);
 }
 
-
-/* Extra-Curricular Sections */
-.extracurricular-section {
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    border-radius: 0;
-    padding: 0;
-    margin-bottom: 3rem;
+.extracurricular-card ul {
+    margin: 0.65rem 0 0;
+    padding-left: 1.1rem;
 }
 
-.extracurricular-section h2 {
-    margin-bottom: 1rem;
+.extracurricular-card li {
+    margin-bottom: 0.55rem;
+    font-size: 0.86rem;
+    line-height: 1.5;
+    color: rgb(70, 70, 70);
 }
 
-.extracurricular-section ul {
-    margin-left: 1.5rem;
+.extracurricular-card li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Tablet */
+@media screen and (max-width: 900px) {
+    .extracurricular-page {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .extracurricular-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.25rem;
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .extracurricular-page {
+        padding: 2.5rem 7% 4rem;
+    }
+
+    .extracurricular-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        margin-top: 2.25rem;
+    }
+
+    .extracurricular-card {
+        padding: 1.15rem 1.2rem;
+    }
+
+    .extracurricular-card h2 {
+        font-size: 1.15rem;
+    }
+
+    .extracurricular-card p,
+    .extracurricular-card li {
+        font-size: 0.86rem;
+    }
 }
