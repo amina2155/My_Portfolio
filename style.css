@@ -336,3 +336,22 @@ nav {
     background: white;
     color: rgb(70, 70, 70);
 }
+
+
+/* Extra-Curricular Sections */
+.extracurricular-section {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    margin-bottom: 3rem;
+}
+
+.extracurricular-section h2 {
+    margin-bottom: 1rem;
+}
+
+.extracurricular-section ul {
+    margin-left: 1.5rem;
+}
